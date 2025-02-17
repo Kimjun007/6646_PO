@@ -1,0 +1,133 @@
+:root {
+  --primary-color: rgb(223, 35, 213);
+  --secondary-color: rgb(151, 55, 240);
+  --text-color-normal: black;
+  --bes-color-white: white;
+  --backgrourd-color: gray;
+  --box-shadow: rgb(56, 41, 41) 0 1px 5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color-normal);
+}
+header {
+  padding: 15px 20px;
+  box-shadow: var(--box-shadow);
+}
+.btn-filled {
+    background-color: var(--primary-color);
+    color: var(--bes-color-white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  .btn-filled:hover {
+    background-color: var(--secondary-color);
+  }
+  .btn-outline {
+    background-color: var(--bes-color-white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: solid var(--primary-color);
+    color: var(--primary-color);
+  }
+  .btn-outline:hover {
+    background-color: var(--secondary-color);
+    border: solid var(--bes-color-white);
+    color: var(--bes-color-white);
+  }
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+}
+nav,
+ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin-left: 20px;
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  a:hover {
+    color: var(--secondary-color);
+  }
+}
+
+/* Container Section*/
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-side {
+  width: 80%;
+  h1 {
+    color: #ed2cff;
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+  }
+  p {
+    font-size: 1.2;
+    margin: 24px 0;
+  }
+}
+.right-sid {
+  width: 20%;
+  img {
+    width: 100%;
+  }
+}
+.solution{
+    margin-top: 50px;
+}
+.solution-heading{
+    text-align: center;
+    margin-bottom: 24px;
+
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 24px;
+    }
+}
+h2{
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 24px;
+}
+.solution-content{
+    display: flex;
+    justify-content: space-between;
+
+    .item{
+        width: 32%;
+    }
+}
+.item{
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    padding: 20px;
+    /*margin: 10px; */
+}
+
+.discover-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
